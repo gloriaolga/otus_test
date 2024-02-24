@@ -1,0 +1,11 @@
+#!/bin/bash
+# script.sh $1
+
+if [ -!d $1 ]
+then  
+    echo "This directory doesn't exist. Exit code = 2"
+else
+    rm -v $1/*.bak $1/*.backup $1/*.tmp
+    
+fi
+	
